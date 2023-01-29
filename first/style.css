@@ -1,0 +1,444 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #fff;
+    color: #969696;
+    font-family: "PT sans";
+    font-weight: 400;
+    font-size: 12px;
+}
+
+a{
+    text-decoration: none;
+    text-underline: none;
+}
+
+ol, ul, li{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+h2{
+
+    font-family: 'Playfair Display';
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+
+.top__line{
+    padding: 14px 0;
+    background: #000000;
+}
+
+.top__line .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contacts{
+
+    display: flex;
+    justify-content: space-between;
+}
+.contacts__info{
+
+}
+.contacts__info span{
+    margin: 0px 16px;
+}
+
+.sign{
+
+    display: flex;
+    justify-content: space-between;
+}
+.sign__btn{
+    margin-left: 12px;
+}
+
+
+
+
+
+
+header{
+    background: #0F0F0F;
+
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list{
+    display: flex;
+    max-width: 435px;
+    width: 100%;
+}
+.nav__item{
+    padding: 31px 20px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    cursor: pointer;
+
+
+}
+
+.nav__item:hover{
+    background: #1F1F1F;
+}
+
+
+
+
+.header__action{
+    margin-left: 40px;
+    display: flex;
+
+}
+
+.cart{
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+.search{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+.main{
+    background-image: url("img/main.jpg");
+    background-position: center;
+    width: 100%;
+    padding: 160px 0px 154px 0px;
+}
+
+.main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.center__content{
+    border: 4px solid #FFFFFF;
+    padding: 115px 68px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.center__descr{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    margin-top: 15px;
+    height: 20px;
+
+    border-top: 2px solid #FFFFFF ;
+}
+
+
+
+.main__text{
+    margin-top: 80px;
+
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    max-width: 730px;
+    color: #FFFFFF;
+}
+
+
+
+
+.presentation{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.season{
+    background: #000000;
+    width: 55%;
+    padding: 93px 80px;
+
+    text-align: center;
+}
+
+.sep__line{
+    display: inline-block;
+    height: 1px;
+    width: 120px;
+    background: #FFFFFF;
+}
+
+.season .sep__line{
+    margin: 50px 0px;
+}
+
+
+.shop__list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 260px);
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.shop__item{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.shop__item img{
+
+    margin-bottom: 25px;
+}
+
+.shop__item h4{
+    margin-bottom: 10px;
+    font-family: 'Playfair Display';
+    font-size: 18px;
+    line-height: 21px;
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+.shop__item span{
+    font-family: 'Playfair Display';
+    font-size: 16px;
+    line-height: 19px;
+
+    /* light-gray */
+
+    color: #D0D0D0;
+
+}
+
+
+.collection{
+    background-image: url("img/collection.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 484px;
+}
+
+@media (max-width: 1400px){
+    .presentation{
+        flex-direction: column;
+    }
+
+    .collection{
+        width: 100%;
+    }
+
+    .season{
+        width: 100%;
+    }
+}
+
+.collection .sep__line{
+    margin: 30px 0px;
+}
+
+.catalog__btn{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    /* white */
+
+    color: #FFFFFF;
+
+    border: 1px solid #FFFFFF;
+    padding: 12px 28px;
+}
+
+
+
+.old__pres{
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+
+
+.just{
+    width: 45%;
+    background-image: url("img/gentl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.collection__2018{
+    width: 55%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 285px;
+    background: black;
+    text-align: center;
+}
+
+@media (max-width: 1630px){
+    .old__pres{
+        flex-direction: column;
+        height: 1130px;
+    }
+
+    .just{
+        width: 100%;
+        height: 630px;
+        order: 2;
+    }
+
+    .collection__2018{
+        width: 100%;
+        height: 500px;
+        order: 1;
+        padding: 100px 70px;
+    }
+}
+
+.old__pres p{
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* or 21px */
+
+    text-align: center;
+
+    /* white */
+
+    color: #FFFFFF;
+
+}
+
+
+
+.receive{
+    background: #000000;
+    padding: 120px 150px;
+}
+
+.receive .container{
+    text-align: center;
+}
+.receive .shop__list{
+    gap: 23px;
+}
+
+.receive .sep__line{
+    margin: 40px 0px 80px 0px;
+}
+
+
+
+
+
+
+
+.brand{
+    background: #0F0F0F;
+}
+
+.brand .container{
+    text-align: center;
+    padding: 60px 0px 80px 0px;
+}
+
+.brand .sep__line{
+    margin: 40px 0px;
+}
+
+
+
+
+
+
+
+
+
